@@ -1,0 +1,1903 @@
+<!DOCTYPE HTML>
+  <html lang="">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="hero.1.0.0.js"></script>
+    <script src="fusion.1.0.0.js"></script>
+    </head>
+  <body>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+  body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-element {
+    position: absolute;
+  }
+  .fusion--player {
+    background-color: #fff;
+  }
+  
+  
+        #guid_138d60c1_7a34_4403_acfc_0c93e4a3bf18 {
+  position: absolute;
+  width: 590px;
+  height: 926px;
+  background-color: #fff;
+}
+#guid_f30d0a0d_ddd5_4551_8cf4_87722c01b320 {
+  width: 590px;
+  height: 926px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#guid_039d8bdd_cf4d_4c71_bc44_327e1f1db195 {
+  width: 234px;
+  height: 62px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 152, 751);
+}
+#guid_86690d33_0c00_43ef_a9fe_fd561900fff7 {
+  position: absolute;
+  width: 428px;
+  height: 926px;
+  background-color: #fff;
+}
+#guid_0789dac9_0900_4995_9335_c5b77e7c1b7a {
+  width: 428px;
+  height: 926px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-color: #8eb9c6;
+}
+#guid_0121cce2_e0cb_4fd7_9f3d_c968bc0a7d17 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -24.13250732421875, -29);
+}
+#guid_569e2816_309c_4013_b658_9708d18d49f0 {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 24.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_59eca299_76d3_41b5_8853_f5807b6a534e {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 271.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_2015e055_b572_46e6_b93b_275de39a2b39 {
+  width: 271px;
+  height: 336px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 92.13250732421875, 266);
+  opacity: 0.38999998569488525;
+}
+#guid_0cf732ce_4fcb_4472_91e4_20d7af06433f {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 228.13250732421875, 669);
+  opacity: 0.38999998569488525;
+}
+#guid_01b831f1_4826_4942_a57f_d6ecc0c85f3e {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 23.13250732421875, 680);
+  opacity: 0.38999998569488525;
+}
+#guid_135ad527_8095_4d43_9996_09448a2f5e6b {
+  width: 357px;
+  height: 773px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 36, 81);
+}
+#guid_a637aa9d_e4ef_493c_a334_a52b947180d6 {
+  width: 70px;
+  height: 70px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 81, 312);
+}
+#guid_972d55be_2446_4823_9663_6bf9c72a6313 {
+  width: 70px;
+  height: 70px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 184, 312);
+}
+#guid_bd0ad346_bc53_4d69_b266_9b4fb7d7f6fc {
+  width: 70px;
+  height: 70px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 273, 313);
+}
+#guid_33895112_edbe_4249_b00c_f50dec04e645 {
+  width: 70px;
+  height: 70px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 186, 434);
+}
+#guid_c7a14d2f_0879_4ff2_b2af_0ecbd3a388b0 {
+  width: 70px;
+  height: 70px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 81, 434);
+}
+#guid_9dd751a5_cbc8_4d0d_9866_0b429f0c6927 {
+  width: 70px;
+  height: 70px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 185, 580);
+}
+#guid_ac3f52f1_1e41_4f83_aea8_52c5b566a157 {
+  width: 70px;
+  height: 70px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 279, 434);
+}
+#guid_70310ba6_aec1_46e6_a6a7_f666af7a307b {
+  width: 70px;
+  height: 70px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 83, 580);
+}
+#guid_4b3e641f_0986_42c1_b11f_cfafd4e09b2b {
+  position: absolute;
+  width: 428px;
+  height: 926px;
+  background-color: #fff;
+}
+#guid_e1d6254d_5b87_40db_8636_14f46d711025 {
+  width: 428px;
+  height: 926px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-color: #8eb9c6;
+}
+#guid_539336b6_e2b7_483e_ab62_d3e7b954baf9 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -24.13250732421875, -29);
+  opacity: 0.699999988079071;
+}
+#guid_6a16cf26_3102_4fed_86a3_d48cce2cdcb8 {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 24.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_d3d794c1_e746_4a9f_8bcd_e30d2a1bed9c {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 271.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_77da533f_22c0_4e86_b68c_a8beb30672d2 {
+  width: 271px;
+  height: 336px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 92.13250732421875, 266);
+  opacity: 0.38999998569488525;
+}
+#guid_4e3907f1_097b_499d_9abf_acc399eaf42e {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 228.13250732421875, 669);
+  opacity: 0.38999998569488525;
+}
+#guid_7dc6b592_2087_48c1_853a_9a05aac9227f {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 23.13250732421875, 680);
+  opacity: 0.38999998569488525;
+}
+#guid_db244192_9018_404f_b146_1274d5cc6e2e {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 181.596435546875, 859.974853515625);
+}
+#guid_011a14d1_809a_4e86_bb36_049a1eb0551c {
+  width: 51.3px;
+  height: 42.969px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 6.75, 7.256250381469727);
+  pointer-events: none;
+}
+#guid_03377518_b594_4b5b_a188_45aac1986137 {
+  width: 58.06px;
+  height: 12.783px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 3.373753309249878, 3.375);
+  pointer-events: none;
+}
+#guid_6113123c_d3be_49b2_af58_9e750c73698f {
+  width: 45.6px;
+  height: 28.702px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 320.39990234375, 877.4979667663574);
+  pointer-events: none;
+}
+#guid_8e288e59_525c_4be6_956d_bbd9c9a5e0a0 {
+  width: 392px;
+  height: 788.17px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 24, 36);
+}
+#guid_61159142_c781_4fe9_b060_63aae654edf1 {
+  position: absolute;
+  width: 428px;
+  height: 926px;
+  background-color: #fff;
+}
+#guid_dff70e11_5a07_4319_923b_c4f2f124516d {
+  width: 428px;
+  height: 926px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-color: #8eb9c6;
+}
+#guid_f060edfb_a5f5_48b6_874a_9ee14e2efaad {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -24.132568359375, -29);
+}
+#guid_ca6d128b_e37b_4cfe_a5b5_fda3117075e6 {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 24.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_8cf72821_06b5_4b18_be1b_70a4abcf0f14 {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 271.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_6b79d23c_723d_4996_a9d6_cfbbac35d454 {
+  width: 271px;
+  height: 336px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 92.13250732421875, 266);
+  opacity: 0.38999998569488525;
+}
+#guid_1c37f904_dcbd_4f26_a10b_8009d6006cb2 {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 228.13250732421875, 669);
+  opacity: 0.38999998569488525;
+}
+#guid_7f9bed6d_46a9_44be_a11b_7dbf3fd48425 {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 23.13250732421875, 680);
+  opacity: 0.38999998569488525;
+}
+#guid_2ed8c2f3_38c1_4b8e_8eb4_9fb59a624151 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 162.933349609375, 87);
+}
+#guid_b206071c_0049_435a_8f9f_e21c7db2c7b2 {
+  width: 392px;
+  height: 788.168px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -138.933349609375, -51);
+}
+#guid_d30f5727_72b5_41cf_a2cf_d75f1b811370 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 29.615642547607422, 765.0687255859375);
+}
+#guid_8e8fb7f0_d021_4b16_8280_38d46ea08596 {
+  width: 36.143px;
+  height: 38.05px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 3.376246690750122, 3.8812503814697266);
+  pointer-events: none;
+}
+#guid_8ee08b40_243b_463d_a7c9_025d0cfba2e3 {
+  width: 42.902px;
+  height: 12.783px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  pointer-events: none;
+}
+#guid_bd0ca924_4f6d_431a_9283_81620b850b0b {
+  width: 63.335px;
+  height: 30.532px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 154.731689453125, 776.4675717353821);
+  pointer-events: none;
+}
+#guid_d0ef7621_6a2b_4b21_aec5_8b681ffa5e04 {
+  width: 53.856px;
+  height: 34.4px;
+  transform-origin: 50% 50%;
+  transform: matrix(-1, 1.2246468525851679e-16, -1.2246468525851679e-16, -1, -98.93335342407227, 772.6002807617188);
+  pointer-events: none;
+}
+#guid_2d0d924f_5cc5_4155_9641_aa912a32546a {
+  position: absolute;
+  width: 428px;
+  height: 926px;
+  background-color: #fff;
+}
+#guid_049dc9f9_f36f_46f2_8add_58513e6807c8 {
+  width: 428px;
+  height: 926px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-color: #8eb9c6;
+}
+#guid_b8ccecbb_3fab_49c6_9208_b4a11375e193 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -24.132568359375, -29);
+}
+#guid_9a6030c4_395f_4af6_b64e_9db2feab2b59 {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 24.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_8198e619_567d_40a8_8874_72c7590d022b {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 271.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_8ff14de3_9eff_4904_ac01_2e11cb52eb41 {
+  width: 271px;
+  height: 336px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 92.13250732421875, 266);
+  opacity: 0.38999998569488525;
+}
+#guid_ef4ccf74_83b9_47f8_9d31_b4622c2c63b2 {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 228.13250732421875, 669);
+  opacity: 0.38999998569488525;
+}
+#guid_d724de2a_c98d_44a3_82ec_607b1f2d50c1 {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 23.13250732421875, 680);
+  opacity: 0.38999998569488525;
+}
+#guid_087849e5_8ad6_4045_b6ab_3c331c4f377b {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -5.5496826171875, 0);
+}
+#guid_10d03f71_258a_4923_ae8b_f44668af5a21 {
+  width: 633px;
+  height: 966px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -84.4503173828125, -55);
+}
+#guid_bf696c82_a6c4_40ec_8e1d_c0f22bc41f72 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 193.45266723632812, 857.669921875);
+}
+#guid_95f1727b_b51d_4742_8125_229acdad7d55 {
+  width: 45.435px;
+  height: 49.449px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -18.337621212005615, 6.391443252563477);
+  pointer-events: none;
+}
+#guid_a1ff9997_cafb_4382_90ce_2cca61fd1df3 {
+  width: 52.194px;
+  height: 12.783px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -21.999998807907104, 0);
+  pointer-events: none;
+}
+#guid_48294d1c_86a4_451a_80ac_3fa1a2fb1be6 {
+  width: 61.746px;
+  height: 37.508px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 325.2147216796875, 873.4916186332703);
+  pointer-events: none;
+}
+#guid_cda242b0_ad19_4b92_9ed4_1dc1d8975f95 {
+  width: 68.009px;
+  height: 31.644px;
+  transform-origin: 50% 50%;
+  transform: matrix(-1, 1.2246468525851679e-16, -1.2246468525851679e-16, -1, 28.875732421875, 873.4916382431984);
+  pointer-events: none;
+}
+#guid_f4105c36_8e2c_4d7c_821d_de8fdb223ca9 {
+  position: absolute;
+  width: 428px;
+  height: 926px;
+  background-color: #fff;
+}
+#guid_c974dffa_2654_41fb_851f_c1a370035003 {
+  width: 428px;
+  height: 926px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-color: #8eb9c6;
+}
+#guid_45f23b5a_1414_44d7_a3cc_d4d74a3d99f7 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -24.132568359375, -29);
+}
+#guid_34275c3a_d1e5_4edb_92a4_e0f2a48880ad {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 24.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_2623112b_05e7_4d53_9bcd_3d2b5638e420 {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 271.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_4a8c8caf_4afe_4b24_9f27_67a5cfbf0278 {
+  width: 271px;
+  height: 336px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 92.13250732421875, 266);
+  opacity: 0.38999998569488525;
+}
+#guid_6d444d2e_aa0f_422e_a4f2_7d37d47218cd {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 228.13250732421875, 669);
+  opacity: 0.38999998569488525;
+}
+#guid_10c596a2_996c_41b8_915d_4d250a8a63ca {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 23.13250732421875, 680);
+  opacity: 0.38999998569488525;
+}
+#guid_52183f8f_1ed6_4281_bec6_a9ffdbfc746b {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 152.1517333984375, 400.3349609375);
+}
+#guid_297fd889_c793_4670_ab45_0efa4143dd3c {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 32.15122604370117, 463.33489990234375);
+}
+#guid_e729d054_5e7a_4fd5_ba43_fd05c96d69a7 {
+  width: 45.435px;
+  height: 49.449px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 3.376246690750122, 3.8812503814697266);
+  pointer-events: none;
+}
+#guid_3ca857b7_a30c_4f59_b9b6_049c23a0bf2d {
+  width: 52.194px;
+  height: 12.783px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  pointer-events: none;
+}
+#guid_17a83516_88cd_4f74_a9fe_76d177a288af {
+  width: 75.457px;
+  height: 38.4px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 167.19091796875, 470.79999923706055);
+  pointer-events: none;
+}
+#guid_615685f7_5861_4e0e_8244_38ae684ef4a1 {
+  width: 72.257px;
+  height: 38.4px;
+  transform-origin: 50% 50%;
+  transform: matrix(-1, 1.2246468525851679e-16, -1.2246468525851679e-16, -1, -130.951904296875, 470.79995346069336);
+  pointer-events: none;
+}
+#guid_296644a2_3b0e_4180_9d9c_3b32181f7eff {
+  width: 407px;
+  height: 822px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 21, 27);
+}
+#guid_9972df8e_40f0_4c3f_a2b4_fa2e0d82911d {
+  position: absolute;
+  width: 428px;
+  height: 926px;
+  background-color: #fff;
+}
+#guid_a5eec9b9_b8a9_40b1_b431_9e23e2781051 {
+  width: 428px;
+  height: 926px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-color: #8eb9c6;
+}
+#guid_e6edb091_574b_45f1_bd90_1abd74c485a9 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -24.132568359375, -29);
+}
+#guid_d51b916b_dcd7_4f84_8075_0b323ba352c1 {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 24.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_9f3cf7d2_a2d0_4bfb_87c7_654ce62e073e {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 271.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_abb07d69_2e52_4bfb_b775_b3af0932c5db {
+  width: 271px;
+  height: 336px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 92.13250732421875, 266);
+  opacity: 0.38999998569488525;
+}
+#guid_ce009a0a_cc4b_4e8e_a9db_fc5ffd84ff87 {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 228.13250732421875, 669);
+  opacity: 0.38999998569488525;
+}
+#guid_066e149a_3e64_4e17_9a6e_7a401bf2f428 {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 23.13250732421875, 680);
+  opacity: 0.38999998569488525;
+}
+#guid_c0b1a1c1_ede2_4ae6_b62d_9b06707eecf9 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -15, 0);
+}
+#guid_0e01a427_54cc_48e8_961c_6ed42dc72188 {
+  width: 408px;
+  height: 833px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 31, 29);
+}
+#guid_7afdae0f_c3ee_4d45_abf7_68f62fdf5962 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 186.94549560546875, 869.8150634765625);
+}
+#guid_358f2e3a_c6dd_4b45_bb5f_0308035faaea {
+  width: 49.768px;
+  height: 43.304px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 3.376246690750122, 3.8812503814697266);
+  pointer-events: none;
+}
+#guid_4ed30d75_2038_4bd5_81f2_52c912d761f9 {
+  width: 56.527px;
+  height: 12.783px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  pointer-events: none;
+}
+#guid_16c2fab9_cf29_4edf_9cae_9e5389ecc109 {
+  width: 53.583px;
+  height: 35.146px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 346.06494140625, 881.8542294502258);
+  pointer-events: none;
+}
+#guid_779647b6_c31d_4a52_b1b9_9b69694ff526 {
+  width: 57.635px;
+  height: 35.146px;
+  transform-origin: 50% 50%;
+  transform: matrix(-1, 1.2246468525851679e-16, -1.2246468525851679e-16, -1, 31.000003814697266, 881.8541259765625);
+  pointer-events: none;
+}
+#guid_e3aca77a_c1ff_4e94_be7d_fbe246e6fae4 {
+  position: absolute;
+  width: 428px;
+  height: 926px;
+  background-color: #fff;
+}
+#guid_ba236231_5115_4e09_827b_a8b350adb88d {
+  width: 428px;
+  height: 926px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-color: #8eb9c6;
+}
+#guid_2b01841b_b21d_42b6_b8b0_dedeb2a868d4 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -24.132568359375, -29);
+}
+#guid_e38159f9_75cb_444b_9f01_1c375dd36926 {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 24.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_0980426a_fec9_4819_8aa5_f8cde55c5a5c {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 271.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_2beff0fb_53d7_4240_b13d_257953511ee4 {
+  width: 271px;
+  height: 336px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 92.13250732421875, 266);
+  opacity: 0.38999998569488525;
+}
+#guid_6024145e_5e56_4fe4_a85c_c8851e627f59 {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 228.13250732421875, 669);
+  opacity: 0.38999998569488525;
+}
+#guid_ab112f0e_bb1f_4955_b1a9_24dab2a9d4c4 {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 23.13250732421875, 680);
+  opacity: 0.38999998569488525;
+}
+#guid_7ecd841e_6ea6_410c_9a44_19a79e1b9f5b {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 97.5576171875, 79.9090576171875);
+}
+#guid_a60ca7c9_831d_4104_96ea_e7aa4fd2bbbd {
+  width: 406px;
+  height: 842px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -79.5576171875, -56.9090576171875);
+}
+#guid_e9af85fc_476d_444f_b03a_8402ea1437c4 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 81.01824188232422, 797.0330810546875);
+}
+#guid_cb7b8f85_2663_4204_8005_018a2b480b9e {
+  width: 35.665px;
+  height: 38.177px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 3.376246690750122, 3.8812503814697266);
+  pointer-events: none;
+}
+#guid_4adae08a_4c9b_4863_9b83_a62fd1213ee5 {
+  width: 42.424px;
+  height: 12.783px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  pointer-events: none;
+}
+#guid_0ecc5f30_df5b_4d03_82ff_c6f4bfa3855e {
+  width: 54.113px;
+  height: 30.124px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 224.33642578125, 810.9673271179199);
+  pointer-events: none;
+}
+#guid_a2aba69e_41da_4cfe_b7c7_f6397f26d58b {
+  width: 59.55px;
+  height: 29.124px;
+  transform-origin: 50% 50%;
+  transform: matrix(-1, 1.2246468525851679e-16, -1.2246468525851679e-16, -1, -66.74414443969727, 810.9673443436623);
+  pointer-events: none;
+}
+#guid_724512c7_f734_496a_8648_88ea145111cc {
+  position: absolute;
+  width: 428px;
+  height: 926px;
+  background-color: #fff;
+}
+#guid_5a181acf_5099_457b_99c5_d087e540e4b1 {
+  width: 428px;
+  height: 926px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-color: #8eb9c6;
+}
+#guid_640bb25c_d118_4b2d_9ba9_58d47f709843 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -24.132568359375, -29);
+}
+#guid_ed671cba_891b_485f_9a8d_4bf9f9f3a73f {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 24.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_52b1f8a8_f11f_4689_9722_c281e1851cab {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 271.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_da6d8236_435e_417f_b8ea_8f66d514b189 {
+  width: 271px;
+  height: 336px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 92.13250732421875, 266);
+  opacity: 0.38999998569488525;
+}
+#guid_82033e6e_bd2e_4859_bea8_2a7fe1915fc2 {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 228.13250732421875, 669);
+  opacity: 0.38999998569488525;
+}
+#guid_fa46f9f5_c6f0_47cd_a89f_345e4d3c28ff {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 23.13250732421875, 680);
+  opacity: 0.38999998569488525;
+}
+#guid_23268598_0932_4e0f_b4d7_66ecf32084e9 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 94.569580078125, 92.343017578125);
+}
+#guid_bcf5fb7d_c64c_475c_ad62_355551ee253e {
+  width: 411px;
+  height: 827px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -83.569580078125, -57.343017578125);
+}
+#guid_b2c5291c_cf3b_4488_94b2_d0779128322b {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 77.91819763183594, 782.39111328125);
+}
+#guid_56600f2d_d31d_4523_b4bb_087628bfe20b {
+  width: 37.253px;
+  height: 41.962px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 3.376246690750122, 3.8812503814697266);
+  pointer-events: none;
+}
+#guid_588ce5e9_9f37_427d_b3dc_2392a37b6115 {
+  width: 44.012px;
+  height: 12.783px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  pointer-events: none;
+}
+#guid_ee98e719_061e_49e3_be04_a74537b6cdfc {
+  width: 54.788px;
+  height: 32.943px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 217.880126953125, 792.2917289733887);
+  pointer-events: none;
+}
+#guid_8296b0f2_8f45_4c77_94ff_9437e3f2d77a {
+  width: 58.81px;
+  height: 29.943px;
+  transform-origin: 50% 50%;
+  transform: matrix(-0.9993908405303955, 0.03489949554204941, -0.03489949554204941, -0.9993908405303955, -47.89667313532428, 796.7779467667439);
+  pointer-events: none;
+}
+#guid_059d02d9_9294_4135_9fb1_efc1b796dd62 {
+  position: absolute;
+  width: 428px;
+  height: 926px;
+  background-color: #fff;
+}
+#guid_c80436b1_f70f_4136_ac70_004fd6d33f9a {
+  width: 428px;
+  height: 926px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-color: #8eb9c6;
+}
+#guid_5b884f0b_c2f7_4b0a_ad18_c0cb4e079eec {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -24.1328125, -29);
+}
+#guid_15a3691d_19b9_4742_bacb_a5aff15938e1 {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 24.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_3f4a8f49_891d_4152_82d8_dac33f3ecb49 {
+  width: 181px;
+  height: 223px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 271.13250732421875, 29);
+  opacity: 0.38999998569488525;
+}
+#guid_d54be76a_0698_4e86_a7cb_d20b26cd6ff4 {
+  width: 271px;
+  height: 336px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 92.13250732421875, 266);
+  opacity: 0.38999998569488525;
+}
+#guid_51f768a2_3595_41a0_9269_54e0cd657151 {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 228.13250732421875, 669);
+  opacity: 0.38999998569488525;
+}
+#guid_367e7bd2_93e8_4f5b_aab5_c314b065f345 {
+  width: 215px;
+  height: 266px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 23.13250732421875, 680);
+  opacity: 0.38999998569488525;
+}
+#guid_b8765275_eafd_4d00_9344_7ba4f0f6f33b {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 115.39990234375, 81);
+}
+#guid_65bdadc3_0c90_4a9b_8338_b4c496357e27 {
+  width: 412px;
+  height: 840px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -99.39990234375, -57);
+}
+#guid_f53f72cd_ad75_4386_a11c_4a67c4bc0898 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 80.6510238647461, 794.199951171875);
+}
+#guid_6ffa4ca4_84e9_4664_82bd_73e9b1d0ef50 {
+  width: 37.59px;
+  height: 40.519px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 3.376246690750122, 3.8812503814697266);
+  pointer-events: none;
+}
+#guid_98c8e284_3add_4a3e_ac5e_7cd2b5da95ed {
+  width: 44.349px;
+  height: 12.783px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  pointer-events: none;
+}
+#guid_b0283b06_58c0_480d_b5ce_054415827edb {
+  width: 61.522px;
+  height: 32px;
+  transform-origin: 50% 50%;
+  transform: matrix(-1, 1.2246468525851679e-16, -1.2246468525851679e-16, -1, -68.60010147094727, 801.2000122666359);
+  pointer-events: none;
+}
+
+      
+
+  </style>
+
+  
+
+        <!-- /////////////////////// -->
+        <!-- Player -->
+        <div class="wrapper" style="position: relative; width: 100%; height: 100%;">
+          <div id="player" class="fusion--player" style="width: 100%; height: 100%; ">
+            <div class="fusion--viewport">
+            
+            
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_138d60c1_7a34_4403_acfc_0c93e4a3bf18">
+              <div class="fusion--scene--content">
+                
+<div id="guid_138d60c1_7a34_4403_acfc_0c93e4a3bf18" class="artboard scene" >
+<img id="guid_f30d0a0d_ddd5_4551_8cf4_87722c01b320" class="hero-element" src="guid_f30d0a0d_ddd5_4551_8cf4_87722c01b320.png" >
+
+<img id="guid_039d8bdd_cf4d_4c71_bc44_327e1f1db195" class="hero-element" src="guid_039d8bdd_cf4d_4c71_bc44_327e1f1db195.png" hero-fx-magnet="{}" >
+
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_86690d33_0c00_43ef_a9fe_fd561900fff7">
+              <div class="fusion--scene--content">
+                
+<div id="guid_86690d33_0c00_43ef_a9fe_fd561900fff7" class="artboard scene" >
+<div id="guid_0789dac9_0900_4995_9335_c5b77e7c1b7a" class="hero-element" >
+</div>
+<div id="guid_0121cce2_e0cb_4fd7_9f3d_c968bc0a7d17" class="hero-element" >
+<img id="guid_569e2816_309c_4013_b658_9708d18d49f0" class="hero-element" src="guid_569e2816_309c_4013_b658_9708d18d49f0.png" >
+
+<img id="guid_59eca299_76d3_41b5_8853_f5807b6a534e" class="hero-element" src="guid_59eca299_76d3_41b5_8853_f5807b6a534e.png" >
+
+<img id="guid_2015e055_b572_46e6_b93b_275de39a2b39" class="hero-element" src="guid_2015e055_b572_46e6_b93b_275de39a2b39.png" >
+
+<img id="guid_0cf732ce_4fcb_4472_91e4_20d7af06433f" class="hero-element" src="guid_0cf732ce_4fcb_4472_91e4_20d7af06433f.png" >
+
+<img id="guid_01b831f1_4826_4942_a57f_d6ecc0c85f3e" class="hero-element" src="guid_01b831f1_4826_4942_a57f_d6ecc0c85f3e.png" >
+
+</div>
+<img id="guid_135ad527_8095_4d43_9996_09448a2f5e6b" class="hero-element" src="guid_135ad527_8095_4d43_9996_09448a2f5e6b.png" >
+
+<img id="guid_a637aa9d_e4ef_493c_a334_a52b947180d6" class="hero-element" src="guid_a637aa9d_e4ef_493c_a334_a52b947180d6.png" hero-fx-magnet="{}" >
+
+<img id="guid_972d55be_2446_4823_9663_6bf9c72a6313" class="hero-element" src="guid_972d55be_2446_4823_9663_6bf9c72a6313.png" hero-fx-magnet="{}" >
+
+<img id="guid_bd0ad346_bc53_4d69_b266_9b4fb7d7f6fc" class="hero-element" src="guid_bd0ad346_bc53_4d69_b266_9b4fb7d7f6fc.png" hero-fx-magnet="{}" >
+
+<img id="guid_33895112_edbe_4249_b00c_f50dec04e645" class="hero-element" src="guid_33895112_edbe_4249_b00c_f50dec04e645.png" hero-fx-magnet="{}" >
+
+<img id="guid_c7a14d2f_0879_4ff2_b2af_0ecbd3a388b0" class="hero-element" src="guid_c7a14d2f_0879_4ff2_b2af_0ecbd3a388b0.png" hero-fx-magnet="{}" >
+
+<img id="guid_9dd751a5_cbc8_4d0d_9866_0b429f0c6927" class="hero-element" src="guid_9dd751a5_cbc8_4d0d_9866_0b429f0c6927.png" hero-fx-magnet="{}" >
+
+<img id="guid_ac3f52f1_1e41_4f83_aea8_52c5b566a157" class="hero-element" src="guid_ac3f52f1_1e41_4f83_aea8_52c5b566a157.png" hero-fx-magnet="{}" >
+
+<img id="guid_70310ba6_aec1_46e6_a6a7_f666af7a307b" class="hero-element" src="guid_70310ba6_aec1_46e6_a6a7_f666af7a307b.png" hero-fx-magnet="{}" >
+
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_4b3e641f_0986_42c1_b11f_cfafd4e09b2b">
+              <div class="fusion--scene--content">
+                
+<div id="guid_4b3e641f_0986_42c1_b11f_cfafd4e09b2b" class="artboard scene" >
+<div id="guid_e1d6254d_5b87_40db_8636_14f46d711025" class="hero-element" >
+</div>
+<div id="guid_539336b6_e2b7_483e_ab62_d3e7b954baf9" class="hero-element" >
+<img id="guid_6a16cf26_3102_4fed_86a3_d48cce2cdcb8" class="hero-element" src="guid_6a16cf26_3102_4fed_86a3_d48cce2cdcb8.png" >
+
+<img id="guid_d3d794c1_e746_4a9f_8bcd_e30d2a1bed9c" class="hero-element" src="guid_d3d794c1_e746_4a9f_8bcd_e30d2a1bed9c.png" >
+
+<img id="guid_77da533f_22c0_4e86_b68c_a8beb30672d2" class="hero-element" src="guid_77da533f_22c0_4e86_b68c_a8beb30672d2.png" >
+
+<img id="guid_4e3907f1_097b_499d_9abf_acc399eaf42e" class="hero-element" src="guid_4e3907f1_097b_499d_9abf_acc399eaf42e.png" >
+
+<img id="guid_7dc6b592_2087_48c1_853a_9a05aac9227f" class="hero-element" src="guid_7dc6b592_2087_48c1_853a_9a05aac9227f.png" >
+
+</div>
+<div id="guid_db244192_9018_404f_b146_1274d5cc6e2e" class="hero-element" >
+<div id="guid_011a14d1_809a_4e86_bb36_049a1eb0551c" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -6.75px; top: -7.256250381469727px;">
+        <path id="guid_011a14d1_809a_4e86_bb36_049a1eb0551c-path" d="M 32.801 7.363 C 32.560 7.221 32.240 7.221 31.999 7.363 L 6.990 22.226 C 6.846 22.322 6.750 22.453 6.750 22.595 L 6.750 49.987 C 6.750 50.118 6.894 50.225 7.071 50.225 L 24.384 50.225 C 24.561 50.225 24.705 50.118 24.705 49.987 L 24.705 33.314 C 24.705 33.183 24.849 33.076 25.026 33.076 L 39.774 33.076 C 39.951 33.076 40.095 33.183 40.095 33.314 L 40.095 49.987 C 40.095 50.118 40.239 50.225 40.416 50.225 L 57.729 50.225 C 57.906 50.225 58.050 50.118 58.050 49.987 L 58.050 22.595 C 58.050 22.453 57.954 22.310 57.810 22.226 L 32.801 7.363 Z" fill="#bf1a1a"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_03377518_b594_4b5b_a188_45aac1986137" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -3.373753547668457px; top: -3.375px;">
+        <path id="guid_03377518_b594_4b5b_a188_45aac1986137-path" d="M 60.677 14.358 L 34.308 3.713 C 33.778 3.495 33.094 3.375 32.397 3.375 C 31.699 3.375 31.015 3.495 30.485 3.713 L 19.003 8.416 L 19.003 5.449 C 19.003 5.372 18.877 5.309 18.724 5.309 L 10.352 5.309 C 10.199 5.309 10.073 5.372 10.073 5.449 L 10.073 11.932 L 4.116 14.400 C 3.683 14.576 3.404 14.836 3.376 15.117 C 3.348 15.398 3.558 15.673 3.948 15.870 C 4.311 16.052 4.799 16.158 5.330 16.158 C 5.776 16.158 6.209 16.080 6.557 15.940 L 32.215 5.534 C 32.285 5.505 32.341 5.505 32.397 5.505 C 32.452 5.505 32.508 5.513 32.578 5.534 L 58.236 15.898 C 58.585 16.038 59.017 16.116 59.464 16.116 C 59.980 16.116 60.468 16.017 60.845 15.827 C 61.249 15.630 61.459 15.356 61.431 15.075 C 61.389 14.794 61.124 14.534 60.677 14.358 Z" fill="#bf1a1a"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+<div id="guid_6113123c_d3be_49b2_af58_9e750c73698f" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: -4.499553680419922px;">
+        <path id="guid_6113123c_d3be_49b2_af58_9e750c73698f-path" d="M 44.578 17.010 L 27.477 5.053 C 25.642 3.775 22.801 4.844 22.801 6.892 L 22.801 30.806 C 22.801 32.854 25.642 33.930 27.477 32.645 L 44.578 20.687 C 45.941 19.731 45.941 17.967 44.578 17.010 Z M 21.777 17.010 L 4.676 5.053 C 2.841 3.775 0 4.844 0 6.892 L 0 30.806 C 0 32.854 2.841 33.930 4.676 32.645 L 21.777 20.687 C 23.140 19.731 23.140 17.967 21.777 17.010 Z" fill="#c91a1a"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<img id="guid_8e288e59_525c_4be6_956d_bbd9c9a5e0a0" class="hero-element" src="guid_8e288e59_525c_4be6_956d_bbd9c9a5e0a0.png" >
+
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_61159142_c781_4fe9_b060_63aae654edf1">
+              <div class="fusion--scene--content">
+                
+<div id="guid_61159142_c781_4fe9_b060_63aae654edf1" class="artboard scene" >
+<div id="guid_dff70e11_5a07_4319_923b_c4f2f124516d" class="hero-element" >
+</div>
+<div id="guid_f060edfb_a5f5_48b6_874a_9ee14e2efaad" class="hero-element" >
+<img id="guid_ca6d128b_e37b_4cfe_a5b5_fda3117075e6" class="hero-element" src="guid_ca6d128b_e37b_4cfe_a5b5_fda3117075e6.png" >
+
+<img id="guid_8cf72821_06b5_4b18_be1b_70a4abcf0f14" class="hero-element" src="guid_8cf72821_06b5_4b18_be1b_70a4abcf0f14.png" >
+
+<img id="guid_6b79d23c_723d_4996_a9d6_cfbbac35d454" class="hero-element" src="guid_6b79d23c_723d_4996_a9d6_cfbbac35d454.png" >
+
+<img id="guid_1c37f904_dcbd_4f26_a10b_8009d6006cb2" class="hero-element" src="guid_1c37f904_dcbd_4f26_a10b_8009d6006cb2.png" >
+
+<img id="guid_7f9bed6d_46a9_44be_a11b_7dbf3fd48425" class="hero-element" src="guid_7f9bed6d_46a9_44be_a11b_7dbf3fd48425.png" >
+
+</div>
+<div id="guid_2ed8c2f3_38c1_4b8e_8eb4_9fb59a624151" class="hero-element" >
+<img id="guid_b206071c_0049_435a_8f9f_e21c7db2c7b2" class="hero-element" src="guid_b206071c_0049_435a_8f9f_e21c7db2c7b2.png" >
+
+<div id="guid_d30f5727_72b5_41cf_a2cf_d75f1b811370" class="hero-element" >
+<div id="guid_8e8fb7f0_d021_4b16_8280_38d46ea08596" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -6.749998092651367px; top: -7.256249904632568px;">
+        <path id="guid_8e8fb7f0_d021_4b16_8280_38d46ea08596-path" d="M 25.104 7.351 C 24.934 7.225 24.708 7.225 24.539 7.351 L 6.919 20.513 C 6.818 20.597 6.750 20.713 6.750 20.840 L 6.750 45.095 C 6.750 45.211 6.852 45.306 6.976 45.306 L 19.174 45.306 C 19.298 45.306 19.400 45.211 19.400 45.095 L 19.400 30.331 C 19.400 30.215 19.502 30.120 19.626 30.120 L 30.017 30.120 C 30.141 30.120 30.243 30.215 30.243 30.331 L 30.243 45.095 C 30.243 45.211 30.344 45.306 30.469 45.306 L 42.667 45.306 C 42.791 45.306 42.893 45.211 42.893 45.095 L 42.893 20.840 C 42.893 20.713 42.825 20.586 42.723 20.513 L 25.104 7.351 Z" fill="#4087e4"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_8ee08b40_243b_463d_a7c9_025d0cfba2e3" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -3.373753786087036px; top: -3.375px;">
+        <path id="guid_8ee08b40_243b_463d_a7c9_025d0cfba2e3-path" d="M 45.717 14.358 L 26.232 3.713 C 25.840 3.495 25.335 3.375 24.820 3.375 C 24.304 3.375 23.799 3.495 23.407 3.713 L 14.922 8.416 L 14.922 5.449 C 14.922 5.372 14.830 5.309 14.716 5.309 L 8.530 5.309 C 8.417 5.309 8.324 5.372 8.324 5.449 L 8.324 11.932 L 3.922 14.400 C 3.602 14.576 3.396 14.836 3.376 15.117 C 3.355 15.398 3.510 15.673 3.798 15.870 C 4.066 16.052 4.427 16.158 4.819 16.158 C 5.149 16.158 5.468 16.080 5.726 15.940 L 24.686 5.534 C 24.737 5.505 24.778 5.505 24.820 5.505 C 24.861 5.505 24.902 5.513 24.954 5.534 L 43.913 15.898 C 44.171 16.038 44.490 16.116 44.820 16.116 C 45.202 16.116 45.563 16.017 45.841 15.827 C 46.140 15.630 46.295 15.356 46.274 15.075 C 46.243 14.794 46.047 14.534 45.717 14.358 Z" fill="#4087e4"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+<div id="guid_bd0ca924_4f6d_431a_9283_81620b850b0b" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: -4.49955415725708px;">
+        <path id="guid_bd0ca924_4f6d_431a_9283_81620b850b0b-path" d="M 61.915 17.808 L 38.164 5.088 C 35.615 3.729 31.669 4.866 31.669 7.044 L 31.669 32.484 C 31.669 34.662 35.615 35.807 38.164 34.440 L 61.915 21.720 C 63.808 20.702 63.808 18.826 61.915 17.808 Z M 30.246 17.808 L 6.495 5.088 C 3.946 3.729 0 4.866 0 7.044 L 0 32.484 C 0 34.662 3.946 35.807 6.495 34.440 L 30.246 21.720 C 32.139 20.702 32.139 18.826 30.246 17.808 Z" fill="#4e9fdd"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_d0ef7621_6a2b_4b21_aec5_8b681ffa5e04" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 5.3275728636894256e-30px; top: 0px;">
+        <path id="guid_d0ef7621_6a2b_4b21_aec5_8b681ffa5e04-path" d="M 52.649 14.995 L 32.452 0.663 C 30.285 -0.868 26.929 0.413 26.929 2.867 L 26.929 31.529 C 26.929 33.983 30.285 35.273 32.452 33.732 L 52.649 19.401 C 54.259 18.255 54.259 16.141 52.649 14.995 Z M 25.720 14.995 L 5.523 0.663 C 3.356 -0.868 1.662e-31 0.413 -2.671e-31 2.867 L -5.328e-30 31.529 C -5.761e-30 33.983 3.356 35.273 5.523 33.732 L 25.720 19.401 C 27.329 18.255 27.329 16.141 25.720 14.995 Z" fill="#4e9fdd"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_2d0d924f_5cc5_4155_9641_aa912a32546a">
+              <div class="fusion--scene--content">
+                
+<div id="guid_2d0d924f_5cc5_4155_9641_aa912a32546a" class="artboard scene" >
+<div id="guid_049dc9f9_f36f_46f2_8add_58513e6807c8" class="hero-element" >
+</div>
+<div id="guid_b8ccecbb_3fab_49c6_9208_b4a11375e193" class="hero-element" >
+<img id="guid_9a6030c4_395f_4af6_b64e_9db2feab2b59" class="hero-element" src="guid_9a6030c4_395f_4af6_b64e_9db2feab2b59.png" >
+
+<img id="guid_8198e619_567d_40a8_8874_72c7590d022b" class="hero-element" src="guid_8198e619_567d_40a8_8874_72c7590d022b.png" >
+
+<img id="guid_8ff14de3_9eff_4904_ac01_2e11cb52eb41" class="hero-element" src="guid_8ff14de3_9eff_4904_ac01_2e11cb52eb41.png" >
+
+<img id="guid_ef4ccf74_83b9_47f8_9d31_b4622c2c63b2" class="hero-element" src="guid_ef4ccf74_83b9_47f8_9d31_b4622c2c63b2.png" >
+
+<img id="guid_d724de2a_c98d_44a3_82ec_607b1f2d50c1" class="hero-element" src="guid_d724de2a_c98d_44a3_82ec_607b1f2d50c1.png" >
+
+</div>
+<div id="guid_087849e5_8ad6_4045_b6ab_3c331c4f377b" class="hero-element" >
+<img id="guid_10d03f71_258a_4923_ae8b_f44668af5a21" class="hero-element" src="guid_10d03f71_258a_4923_ae8b_f44668af5a21.png" >
+
+<div id="guid_bf696c82_a6c4_40ec_8e1d_c0f22bc41f72" class="hero-element" >
+<div id="guid_95f1727b_b51d_4742_8125_229acdad7d55" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -6.749998569488525px; top: -7.256249904632568px;">
+        <path id="guid_95f1727b_b51d_4742_8125_229acdad7d55-path" d="M 29.822 7.380 C 29.609 7.215 29.325 7.215 29.112 7.380 L 6.963 24.484 C 6.835 24.594 6.750 24.744 6.750 24.909 L 6.750 56.431 C 6.750 56.582 6.878 56.705 7.034 56.705 L 22.368 56.705 C 22.524 56.705 22.652 56.582 22.652 56.431 L 22.652 37.244 C 22.652 37.093 22.780 36.969 22.936 36.969 L 35.999 36.969 C 36.155 36.969 36.282 37.093 36.282 37.244 L 36.282 56.431 C 36.282 56.582 36.410 56.705 36.566 56.705 L 51.901 56.705 C 52.057 56.705 52.185 56.582 52.185 56.431 L 52.185 24.909 C 52.185 24.744 52.099 24.580 51.972 24.484 L 29.822 7.380 Z" fill="#cd9627"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_a1ff9997_cafb_4382_90ce_2cca61fd1df3" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -3.373753786087036px; top: -3.375px;">
+        <path id="guid_a1ff9997_cafb_4382_90ce_2cca61fd1df3-path" d="M 54.888 14.358 L 31.183 3.713 C 30.706 3.495 30.092 3.375 29.465 3.375 C 28.837 3.375 28.223 3.495 27.746 3.713 L 17.424 8.416 L 17.424 5.449 C 17.424 5.372 17.311 5.309 17.173 5.309 L 9.647 5.309 C 9.509 5.309 9.396 5.372 9.396 5.449 L 9.396 11.932 L 4.041 14.400 C 3.652 14.576 3.401 14.836 3.376 15.117 C 3.351 15.398 3.539 15.673 3.890 15.870 C 4.216 16.052 4.655 16.158 5.132 16.158 C 5.533 16.158 5.922 16.080 6.236 15.940 L 29.301 5.534 C 29.364 5.505 29.414 5.505 29.465 5.505 C 29.515 5.505 29.565 5.513 29.628 5.534 L 52.693 15.898 C 53.007 16.038 53.396 16.116 53.797 16.116 C 54.261 16.116 54.700 16.017 55.039 15.827 C 55.403 15.630 55.591 15.356 55.566 15.075 C 55.528 14.794 55.290 14.534 54.888 14.358 Z" fill="#cd9627"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+<div id="guid_48294d1c_86a4_451a_80ac_3fa1a2fb1be6" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: -4.499553203582764px;">
+        <path id="guid_48294d1c_86a4_451a_80ac_3fa1a2fb1be6-path" d="M 60.362 20.849 L 37.206 5.223 C 34.722 3.553 30.875 4.949 30.875 7.625 L 30.875 38.878 C 30.875 41.554 34.722 42.960 37.206 41.280 L 60.362 25.654 C 62.207 24.404 62.207 22.099 60.362 20.849 Z M 29.488 20.849 L 6.332 5.223 C 3.847 3.553 0 4.949 0 7.625 L 0 38.878 C 0 41.554 3.847 42.960 6.332 41.280 L 29.488 25.654 C 31.333 24.404 31.333 22.099 29.488 20.849 Z" fill="#e09839"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_cda242b0_ad19_4b92_9ed4_1dc1d8975f95" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: 5.960464477539063e-8px;">
+        <path id="guid_cda242b0_ad19_4b92_9ed4_1dc1d8975f95-path" d="M 66.485 13.793 L 40.980 0.610 C 38.244 -0.799 34.006 0.380 34.006 2.637 L 34.006 29.003 C 34.006 31.260 38.244 32.447 40.980 31.030 L 66.485 17.847 C 68.517 16.792 68.517 14.848 66.485 13.793 Z M 32.479 13.793 L 6.974 0.610 C 4.238 -0.799 0 0.380 0 2.637 L 0 29.003 C 0 31.260 4.238 32.447 6.974 31.030 L 32.479 17.847 C 34.511 16.792 34.511 14.848 32.479 13.793 Z" fill="#e09839"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_f4105c36_8e2c_4d7c_821d_de8fdb223ca9">
+              <div class="fusion--scene--content">
+                
+<div id="guid_f4105c36_8e2c_4d7c_821d_de8fdb223ca9" class="artboard scene" >
+<div id="guid_c974dffa_2654_41fb_851f_c1a370035003" class="hero-element" >
+</div>
+<div id="guid_45f23b5a_1414_44d7_a3cc_d4d74a3d99f7" class="hero-element" >
+<img id="guid_34275c3a_d1e5_4edb_92a4_e0f2a48880ad" class="hero-element" src="guid_34275c3a_d1e5_4edb_92a4_e0f2a48880ad.png" >
+
+<img id="guid_2623112b_05e7_4d53_9bcd_3d2b5638e420" class="hero-element" src="guid_2623112b_05e7_4d53_9bcd_3d2b5638e420.png" >
+
+<img id="guid_4a8c8caf_4afe_4b24_9f27_67a5cfbf0278" class="hero-element" src="guid_4a8c8caf_4afe_4b24_9f27_67a5cfbf0278.png" >
+
+<img id="guid_6d444d2e_aa0f_422e_a4f2_7d37d47218cd" class="hero-element" src="guid_6d444d2e_aa0f_422e_a4f2_7d37d47218cd.png" >
+
+<img id="guid_10c596a2_996c_41b8_915d_4d250a8a63ca" class="hero-element" src="guid_10c596a2_996c_41b8_915d_4d250a8a63ca.png" >
+
+</div>
+<div id="guid_52183f8f_1ed6_4281_bec6_a9ffdbfc746b" class="hero-element" >
+<div id="guid_297fd889_c793_4670_ab45_0efa4143dd3c" class="hero-element" >
+<div id="guid_e729d054_5e7a_4fd5_ba43_fd05c96d69a7" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -6.749998569488525px; top: -7.256249904632568px;">
+        <path id="guid_e729d054_5e7a_4fd5_ba43_fd05c96d69a7-path" d="M 29.822 7.380 C 29.609 7.215 29.325 7.215 29.112 7.380 L 6.963 24.484 C 6.835 24.594 6.750 24.744 6.750 24.909 L 6.750 56.431 C 6.750 56.582 6.878 56.705 7.034 56.705 L 22.368 56.705 C 22.524 56.705 22.652 56.582 22.652 56.431 L 22.652 37.244 C 22.652 37.093 22.780 36.969 22.936 36.969 L 35.999 36.969 C 36.155 36.969 36.282 37.093 36.282 37.244 L 36.282 56.431 C 36.282 56.582 36.410 56.705 36.566 56.705 L 51.901 56.705 C 52.057 56.705 52.185 56.582 52.185 56.431 L 52.185 24.909 C 52.185 24.744 52.099 24.580 51.972 24.484 L 29.822 7.380 Z" fill="#1d8435"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_3ca857b7_a30c_4f59_b9b6_049c23a0bf2d" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -3.373753786087036px; top: -3.375px;">
+        <path id="guid_3ca857b7_a30c_4f59_b9b6_049c23a0bf2d-path" d="M 54.888 14.358 L 31.183 3.713 C 30.706 3.495 30.092 3.375 29.465 3.375 C 28.837 3.375 28.223 3.495 27.746 3.713 L 17.424 8.416 L 17.424 5.449 C 17.424 5.372 17.311 5.309 17.173 5.309 L 9.647 5.309 C 9.509 5.309 9.396 5.372 9.396 5.449 L 9.396 11.932 L 4.041 14.400 C 3.652 14.576 3.401 14.836 3.376 15.117 C 3.351 15.398 3.539 15.673 3.890 15.870 C 4.216 16.052 4.655 16.158 5.132 16.158 C 5.533 16.158 5.922 16.080 6.236 15.940 L 29.301 5.534 C 29.364 5.505 29.414 5.505 29.465 5.505 C 29.515 5.505 29.565 5.513 29.628 5.534 L 52.693 15.898 C 53.007 16.038 53.396 16.116 53.797 16.116 C 54.261 16.116 54.700 16.017 55.039 15.827 C 55.403 15.630 55.591 15.356 55.566 15.075 C 55.528 14.794 55.290 14.534 54.888 14.358 Z" fill="#1d8435"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+<div id="guid_17a83516_88cd_4f74_a9fe_76d177a288af" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: -4.499553680419922px;">
+        <path id="guid_17a83516_88cd_4f74_a9fe_76d177a288af-path" d="M 73.766 21.238 L 45.468 5.240 C 42.432 3.530 37.730 4.960 37.730 7.700 L 37.730 39.695 C 37.730 42.435 42.432 43.874 45.468 42.155 L 73.766 26.157 C 76.021 24.877 76.021 22.517 73.766 21.238 Z M 36.036 21.238 L 7.738 5.240 C 4.702 3.530 0 4.960 0 7.700 L 0 39.695 C 0 42.435 4.702 43.874 7.738 42.155 L 36.036 26.157 C 38.291 24.877 38.291 22.517 36.036 21.238 Z" fill="#478622"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_615685f7_5861_4e0e_8244_38ae684ef4a1" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: 0px;">
+        <path id="guid_615685f7_5861_4e0e_8244_38ae684ef4a1-path" d="M 70.638 16.738 L 43.540 0.741 C 40.633 -0.969 36.130 0.461 36.130 3.200 L 36.130 35.195 C 36.130 37.935 40.633 39.375 43.540 37.655 L 70.638 21.657 C 72.797 20.378 72.797 18.018 70.638 16.738 Z M 34.507 16.738 L 7.410 0.741 C 4.502 -0.969 1.947e-30 0.461 1.794e-30 3.200 L 0 35.195 C -1.536e-31 37.935 4.502 39.375 7.410 37.655 L 34.507 21.657 C 36.667 20.378 36.667 18.018 34.507 16.738 Z" fill="#478622"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+<img id="guid_296644a2_3b0e_4180_9d9c_3b32181f7eff" class="hero-element" src="guid_296644a2_3b0e_4180_9d9c_3b32181f7eff.png" >
+
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_9972df8e_40f0_4c3f_a2b4_fa2e0d82911d">
+              <div class="fusion--scene--content">
+                
+<div id="guid_9972df8e_40f0_4c3f_a2b4_fa2e0d82911d" class="artboard scene" >
+<div id="guid_a5eec9b9_b8a9_40b1_b431_9e23e2781051" class="hero-element" >
+</div>
+<div id="guid_e6edb091_574b_45f1_bd90_1abd74c485a9" class="hero-element" >
+<img id="guid_d51b916b_dcd7_4f84_8075_0b323ba352c1" class="hero-element" src="guid_d51b916b_dcd7_4f84_8075_0b323ba352c1.png" >
+
+<img id="guid_9f3cf7d2_a2d0_4bfb_87c7_654ce62e073e" class="hero-element" src="guid_9f3cf7d2_a2d0_4bfb_87c7_654ce62e073e.png" >
+
+<img id="guid_abb07d69_2e52_4bfb_b775_b3af0932c5db" class="hero-element" src="guid_abb07d69_2e52_4bfb_b775_b3af0932c5db.png" >
+
+<img id="guid_ce009a0a_cc4b_4e8e_a9db_fc5ffd84ff87" class="hero-element" src="guid_ce009a0a_cc4b_4e8e_a9db_fc5ffd84ff87.png" >
+
+<img id="guid_066e149a_3e64_4e17_9a6e_7a401bf2f428" class="hero-element" src="guid_066e149a_3e64_4e17_9a6e_7a401bf2f428.png" >
+
+</div>
+<div id="guid_c0b1a1c1_ede2_4ae6_b62d_9b06707eecf9" class="hero-element" >
+<img id="guid_0e01a427_54cc_48e8_961c_6ed42dc72188" class="hero-element" src="guid_0e01a427_54cc_48e8_961c_6ed42dc72188.png" >
+
+<div id="guid_7afdae0f_c3ee_4d45_abf7_68f62fdf5962" class="hero-element" >
+<div id="guid_358f2e3a_c6dd_4b45_bb5f_0308035faaea" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -6.749998092651367px; top: -7.25624942779541px;">
+        <path id="guid_358f2e3a_c6dd_4b45_bb5f_0308035faaea-path" d="M 32.023 7.364 C 31.789 7.220 31.478 7.220 31.245 7.364 L 6.983 22.343 C 6.843 22.439 6.750 22.571 6.750 22.715 L 6.750 50.320 C 6.750 50.452 6.890 50.560 7.061 50.560 L 23.858 50.560 C 24.029 50.560 24.169 50.452 24.169 50.320 L 24.169 33.517 C 24.169 33.385 24.309 33.277 24.480 33.277 L 38.788 33.277 C 38.959 33.277 39.099 33.385 39.099 33.517 L 39.099 50.320 C 39.099 50.452 39.239 50.560 39.410 50.560 L 56.207 50.560 C 56.378 50.560 56.518 50.452 56.518 50.320 L 56.518 22.715 C 56.518 22.571 56.424 22.427 56.284 22.343 L 32.023 7.364 Z" fill="#b77115"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_4ed30d75_2038_4bd5_81f2_52c912d761f9" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -3.3737542629241943px; top: -3.375px;">
+        <path id="guid_4ed30d75_2038_4bd5_81f2_52c912d761f9-path" d="M 59.165 14.358 L 33.491 3.713 C 32.975 3.495 32.310 3.375 31.631 3.375 C 30.951 3.375 30.286 3.495 29.770 3.713 L 18.590 8.416 L 18.590 5.449 C 18.590 5.372 18.468 5.309 18.318 5.309 L 10.168 5.309 C 10.019 5.309 9.896 5.372 9.896 5.449 L 9.896 11.932 L 4.096 14.400 C 3.675 14.576 3.403 14.836 3.376 15.117 C 3.349 15.398 3.553 15.673 3.933 15.870 C 4.286 16.052 4.762 16.158 5.278 16.158 C 5.713 16.158 6.134 16.080 6.473 15.940 L 31.454 5.534 C 31.522 5.505 31.576 5.505 31.631 5.505 C 31.685 5.505 31.739 5.513 31.807 5.534 L 56.788 15.898 C 57.127 16.038 57.548 16.116 57.983 16.116 C 58.486 16.116 58.961 16.017 59.328 15.827 C 59.722 15.630 59.926 15.356 59.898 15.075 C 59.858 14.794 59.600 14.534 59.165 14.358 Z" fill="#b77115"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+<div id="guid_16c2fab9_cf29_4edf_9cae_9e5389ecc109" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: -4.49955415725708px;">
+        <path id="guid_16c2fab9_cf29_4edf_9cae_9e5389ecc109-path" d="M 52.382 19.819 L 32.287 5.177 C 30.131 3.612 26.793 4.921 26.793 7.429 L 26.793 36.712 C 26.793 39.220 30.131 40.538 32.287 38.964 L 52.382 24.322 C 53.983 23.150 53.983 20.991 52.382 19.819 Z M 25.589 19.819 L 5.495 5.177 C 3.339 3.612 0 4.921 0 7.429 L 0 36.712 C 0 39.220 3.339 40.538 5.495 38.964 L 25.589 24.322 C 27.190 23.150 27.190 20.991 25.589 19.819 Z" fill="#ce7b3b"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_779647b6_c31d_4a52_b1b9_9b69694ff526" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: 0px;">
+        <path id="guid_779647b6_c31d_4a52_b1b9_9b69694ff526-path" d="M 56.343 15.320 L 34.729 0.678 C 32.410 -0.887 28.819 0.422 28.819 2.929 L 28.819 32.213 C 28.819 34.720 32.410 36.038 34.729 34.464 L 56.343 19.822 C 58.065 18.651 58.065 16.491 56.343 15.320 Z M 27.524 15.320 L 5.910 0.678 C 3.591 -0.887 8.621e-30 0.422 7.941e-30 2.929 L 0 32.213 C -6.799e-31 34.720 3.591 36.038 5.910 34.464 L 27.524 19.822 C 29.246 18.651 29.246 16.491 27.524 15.320 Z" fill="#ce7b3b"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_e3aca77a_c1ff_4e94_be7d_fbe246e6fae4">
+              <div class="fusion--scene--content">
+                
+<div id="guid_e3aca77a_c1ff_4e94_be7d_fbe246e6fae4" class="artboard scene" >
+<div id="guid_ba236231_5115_4e09_827b_a8b350adb88d" class="hero-element" >
+</div>
+<div id="guid_2b01841b_b21d_42b6_b8b0_dedeb2a868d4" class="hero-element" >
+<img id="guid_e38159f9_75cb_444b_9f01_1c375dd36926" class="hero-element" src="guid_e38159f9_75cb_444b_9f01_1c375dd36926.png" >
+
+<img id="guid_0980426a_fec9_4819_8aa5_f8cde55c5a5c" class="hero-element" src="guid_0980426a_fec9_4819_8aa5_f8cde55c5a5c.png" >
+
+<img id="guid_2beff0fb_53d7_4240_b13d_257953511ee4" class="hero-element" src="guid_2beff0fb_53d7_4240_b13d_257953511ee4.png" >
+
+<img id="guid_6024145e_5e56_4fe4_a85c_c8851e627f59" class="hero-element" src="guid_6024145e_5e56_4fe4_a85c_c8851e627f59.png" >
+
+<img id="guid_ab112f0e_bb1f_4955_b1a9_24dab2a9d4c4" class="hero-element" src="guid_ab112f0e_bb1f_4955_b1a9_24dab2a9d4c4.png" >
+
+</div>
+<div id="guid_7ecd841e_6ea6_410c_9a44_19a79e1b9f5b" class="hero-element" >
+<img id="guid_a60ca7c9_831d_4104_96ea_e7aa4fd2bbbd" class="hero-element" src="guid_a60ca7c9_831d_4104_96ea_e7aa4fd2bbbd.png" >
+
+<div id="guid_e9af85fc_476d_444f_b03a_8402ea1437c4" class="hero-element" >
+<div id="guid_cb7b8f85_2663_4204_8005_018a2b480b9e" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -6.749998569488525px; top: -7.256250381469727px;">
+        <path id="guid_cb7b8f85_2663_4204_8005_018a2b480b9e-path" d="M 24.861 7.351 C 24.694 7.225 24.471 7.225 24.304 7.351 L 6.917 20.557 C 6.817 20.641 6.750 20.758 6.750 20.885 L 6.750 45.221 C 6.750 45.338 6.850 45.433 6.973 45.433 L 19.010 45.433 C 19.132 45.433 19.233 45.338 19.233 45.221 L 19.233 30.408 C 19.233 30.291 19.333 30.196 19.456 30.196 L 29.709 30.196 C 29.832 30.196 29.932 30.291 29.932 30.408 L 29.932 45.221 C 29.932 45.338 30.032 45.433 30.155 45.433 L 42.192 45.433 C 42.314 45.433 42.415 45.338 42.415 45.221 L 42.415 20.885 C 42.415 20.758 42.348 20.631 42.247 20.557 L 24.861 7.351 Z" fill="rgba(198, 62, 140, 0.9)"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_4adae08a_4c9b_4863_9b83_a62fd1213ee5" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -3.373753786087036px; top: -3.375px;">
+        <path id="guid_4adae08a_4c9b_4863_9b83_a62fd1213ee5-path" d="M 45.246 14.358 L 25.977 3.713 C 25.590 3.495 25.090 3.375 24.581 3.375 C 24.071 3.375 23.571 3.495 23.184 3.713 L 14.794 8.416 L 14.794 5.449 C 14.794 5.372 14.702 5.309 14.590 5.309 L 8.473 5.309 C 8.361 5.309 8.269 5.372 8.269 5.449 L 8.269 11.932 L 3.916 14.400 C 3.600 14.576 3.396 14.836 3.376 15.117 C 3.355 15.398 3.508 15.673 3.794 15.870 C 4.059 16.052 4.415 16.158 4.803 16.158 C 5.129 16.158 5.445 16.080 5.700 15.940 L 24.448 5.534 C 24.499 5.505 24.540 5.505 24.581 5.505 C 24.621 5.505 24.662 5.513 24.713 5.534 L 43.461 15.898 C 43.716 16.038 44.032 16.116 44.359 16.116 C 44.736 16.116 45.093 16.017 45.368 15.827 C 45.664 15.630 45.816 15.356 45.796 15.075 C 45.765 14.794 45.572 14.534 45.246 14.358 Z" fill="rgba(198, 62, 140, 0.9)"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+<div id="guid_0ecc5f30_df5b_4d03_82ff_c6f4bfa3855e" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: -4.499553680419922px;">
+        <path id="guid_0ecc5f30_df5b_4d03_82ff_c6f4bfa3855e-path" d="M 52.900 17.630 L 32.607 5.080 C 30.429 3.739 27.058 4.861 27.058 7.010 L 27.058 32.109 C 27.058 34.258 30.429 35.388 32.607 34.039 L 52.900 21.489 C 54.517 20.485 54.517 18.634 52.900 17.630 Z M 25.842 17.630 L 5.549 5.080 C 3.372 3.739 0 4.861 0 7.010 L 0 32.109 C 0 34.258 3.372 35.388 5.549 34.039 L 25.842 21.489 C 27.459 20.485 27.459 18.634 25.842 17.630 Z" fill="#dd60a3"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_a2aba69e_41da_4cfe_b7c7_f6397f26d58b" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 1.2049769716550353e-30px; top: 5.960464477539063e-8px;">
+        <path id="guid_a2aba69e_41da_4cfe_b7c7_f6397f26d58b-path" d="M 58.215 12.695 L 35.883 0.562 C 33.487 -0.735 29.776 0.349 29.776 2.427 L 29.776 26.693 C 29.776 28.771 33.487 29.863 35.883 28.559 L 58.215 16.426 C 59.995 15.455 59.995 13.665 58.215 12.695 Z M 28.439 12.695 L 6.106 0.562 C 3.710 -0.735 -4.026e-31 0.349 -4.659e-31 2.427 L -1.205e-30 26.693 C -1.268e-30 28.771 3.710 29.863 6.106 28.559 L 28.439 16.426 C 30.218 15.455 30.218 13.665 28.439 12.695 Z" fill="#dd60a3"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_724512c7_f734_496a_8648_88ea145111cc">
+              <div class="fusion--scene--content">
+                
+<div id="guid_724512c7_f734_496a_8648_88ea145111cc" class="artboard scene" >
+<div id="guid_5a181acf_5099_457b_99c5_d087e540e4b1" class="hero-element" >
+</div>
+<div id="guid_640bb25c_d118_4b2d_9ba9_58d47f709843" class="hero-element" >
+<img id="guid_ed671cba_891b_485f_9a8d_4bf9f9f3a73f" class="hero-element" src="guid_ed671cba_891b_485f_9a8d_4bf9f9f3a73f.png" >
+
+<img id="guid_52b1f8a8_f11f_4689_9722_c281e1851cab" class="hero-element" src="guid_52b1f8a8_f11f_4689_9722_c281e1851cab.png" >
+
+<img id="guid_da6d8236_435e_417f_b8ea_8f66d514b189" class="hero-element" src="guid_da6d8236_435e_417f_b8ea_8f66d514b189.png" >
+
+<img id="guid_82033e6e_bd2e_4859_bea8_2a7fe1915fc2" class="hero-element" src="guid_82033e6e_bd2e_4859_bea8_2a7fe1915fc2.png" >
+
+<img id="guid_fa46f9f5_c6f0_47cd_a89f_345e4d3c28ff" class="hero-element" src="guid_fa46f9f5_c6f0_47cd_a89f_345e4d3c28ff.png" >
+
+</div>
+<div id="guid_23268598_0932_4e0f_b4d7_66ecf32084e9" class="hero-element" >
+<img id="guid_bcf5fb7d_c64c_475c_ad62_355551ee253e" class="hero-element" src="guid_bcf5fb7d_c64c_475c_ad62_355551ee253e.png" >
+
+<div id="guid_b2c5291c_cf3b_4488_94b2_d0779128322b" class="hero-element" >
+<div id="guid_56600f2d_d31d_4523_b4bb_087628bfe20b" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -6.749998569488525px; top: -7.256249904632568px;">
+        <path id="guid_56600f2d_d31d_4523_b4bb_087628bfe20b-path" d="M 25.667 7.361 C 25.493 7.221 25.260 7.221 25.085 7.361 L 6.925 21.876 C 6.820 21.969 6.750 22.097 6.750 22.236 L 6.750 48.986 C 6.750 49.114 6.855 49.218 6.983 49.218 L 19.556 49.218 C 19.684 49.218 19.788 49.114 19.788 48.986 L 19.788 32.703 C 19.788 32.575 19.893 32.471 20.021 32.471 L 30.731 32.471 C 30.859 32.471 30.964 32.575 30.964 32.703 L 30.964 48.986 C 30.964 49.114 31.069 49.218 31.197 49.218 L 43.770 49.218 C 43.898 49.218 44.003 49.114 44.003 48.986 L 44.003 22.236 C 44.003 22.097 43.933 21.957 43.828 21.876 L 25.667 7.361 Z" fill="#2e319c"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_588ce5e9_9f37_427d_b3dc_2392a37b6115" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -3.373753786087036px; top: -3.375px;">
+        <path id="guid_588ce5e9_9f37_427d_b3dc_2392a37b6115-path" d="M 46.813 14.358 L 26.824 3.713 C 26.422 3.495 25.903 3.375 25.375 3.375 C 24.846 3.375 24.328 3.495 23.926 3.713 L 15.221 8.416 L 15.221 5.449 C 15.221 5.372 15.126 5.309 15.010 5.309 L 8.664 5.309 C 8.547 5.309 8.452 5.372 8.452 5.449 L 8.452 11.932 L 3.936 14.400 C 3.608 14.576 3.397 14.836 3.376 15.117 C 3.354 15.398 3.513 15.673 3.809 15.870 C 4.084 16.052 4.454 16.158 4.856 16.158 C 5.195 16.158 5.523 16.080 5.787 15.940 L 25.237 5.534 C 25.290 5.505 25.332 5.505 25.375 5.505 C 25.417 5.505 25.459 5.513 25.512 5.534 L 44.962 15.898 C 45.227 16.038 45.554 16.116 45.893 16.116 C 46.284 16.116 46.654 16.017 46.940 15.827 C 47.247 15.630 47.405 15.356 47.384 15.075 C 47.352 14.794 47.151 14.534 46.813 14.358 Z" fill="#2e319c"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+<div id="guid_ee98e719_061e_49e3_be04_a74537b6cdfc" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: -4.499553680419922px;">
+        <path id="guid_ee98e719_061e_49e3_be04_a74537b6cdfc-path" d="M 53.560 18.859 L 33.014 5.135 C 30.809 3.668 27.395 4.895 27.395 7.245 L 27.395 34.693 C 27.395 37.043 30.809 38.278 33.014 36.803 L 53.560 23.079 C 55.197 21.981 55.197 19.957 53.560 18.859 Z M 26.165 18.859 L 5.618 5.135 C 3.414 3.668 0 4.895 0 7.245 L 0 34.693 C 0 37.043 3.414 38.278 5.618 36.803 L 26.165 23.079 C 27.802 21.981 27.802 19.957 26.165 18.859 Z" fill="#0f339a"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_8296b0f2_8f45_4c77_94ff_9437e3f2d77a" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -5.720049550649317e-31px; top: 0px;">
+        <path id="guid_8296b0f2_8f45_4c77_94ff_9437e3f2d77a-path" d="M 57.491 13.052 L 35.437 0.577 C 33.071 -0.756 29.406 0.359 29.406 2.495 L 29.406 27.444 C 29.406 29.580 33.071 30.703 35.437 29.362 L 57.491 16.888 C 59.249 15.890 59.249 14.050 57.491 13.052 Z M 28.085 13.052 L 6.031 0.577 C 3.664 -0.756 8.496e-30 0.359 7.871e-30 2.495 L 5.720e-31 27.444 C -5.299e-32 29.580 3.664 30.703 6.031 29.362 L 28.085 16.888 C 29.843 15.890 29.843 14.050 28.085 13.052 Z" fill="#0f339a"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_059d02d9_9294_4135_9fb1_efc1b796dd62">
+              <div class="fusion--scene--content">
+                
+<div id="guid_059d02d9_9294_4135_9fb1_efc1b796dd62" class="artboard scene" >
+<div id="guid_c80436b1_f70f_4136_ac70_004fd6d33f9a" class="hero-element" >
+</div>
+<div id="guid_5b884f0b_c2f7_4b0a_ad18_c0cb4e079eec" class="hero-element" >
+<img id="guid_15a3691d_19b9_4742_bacb_a5aff15938e1" class="hero-element" src="guid_15a3691d_19b9_4742_bacb_a5aff15938e1.png" >
+
+<img id="guid_3f4a8f49_891d_4152_82d8_dac33f3ecb49" class="hero-element" src="guid_3f4a8f49_891d_4152_82d8_dac33f3ecb49.png" >
+
+<img id="guid_d54be76a_0698_4e86_a7cb_d20b26cd6ff4" class="hero-element" src="guid_d54be76a_0698_4e86_a7cb_d20b26cd6ff4.png" >
+
+<img id="guid_51f768a2_3595_41a0_9269_54e0cd657151" class="hero-element" src="guid_51f768a2_3595_41a0_9269_54e0cd657151.png" >
+
+<img id="guid_367e7bd2_93e8_4f5b_aab5_c314b065f345" class="hero-element" src="guid_367e7bd2_93e8_4f5b_aab5_c314b065f345.png" >
+
+</div>
+<div id="guid_b8765275_eafd_4d00_9344_7ba4f0f6f33b" class="hero-element" >
+<img id="guid_65bdadc3_0c90_4a9b_8338_b4c496357e27" class="hero-element" src="guid_65bdadc3_0c90_4a9b_8338_b4c496357e27.png" >
+
+<div id="guid_f53f72cd_ad75_4386_a11c_4a67c4bc0898" class="hero-element" >
+<div id="guid_6ffa4ca4_84e9_4664_82bd_73e9b1d0ef50" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -6.749998569488525px; top: -7.25624942779541px;">
+        <path id="guid_6ffa4ca4_84e9_4664_82bd_73e9b1d0ef50-path" d="M 25.838 7.357 C 25.662 7.223 25.427 7.223 25.251 7.357 L 6.926 21.373 C 6.820 21.463 6.750 21.586 6.750 21.721 L 6.750 47.551 C 6.750 47.674 6.856 47.775 6.985 47.775 L 19.671 47.775 C 19.801 47.775 19.906 47.674 19.906 47.551 L 19.906 31.828 C 19.906 31.705 20.012 31.604 20.141 31.604 L 30.948 31.604 C 31.078 31.604 31.183 31.705 31.183 31.828 L 31.183 47.551 C 31.183 47.674 31.289 47.775 31.418 47.775 L 44.105 47.775 C 44.234 47.775 44.340 47.674 44.340 47.551 L 44.340 21.721 C 44.340 21.586 44.269 21.451 44.163 21.373 L 25.838 7.357 Z" fill="#699602"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_98c8e284_3add_4a3e_ac5e_7cd2b5da95ed" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -3.373753786087036px; top: -3.375px;">
+        <path id="guid_98c8e284_3add_4a3e_ac5e_7cd2b5da95ed-path" d="M 47.145 14.358 L 27.003 3.713 C 26.598 3.495 26.076 3.375 25.543 3.375 C 25.010 3.375 24.488 3.495 24.083 3.713 L 15.312 8.416 L 15.312 5.449 C 15.312 5.372 15.216 5.309 15.099 5.309 L 8.704 5.309 C 8.587 5.309 8.491 5.372 8.491 5.449 L 8.491 11.932 L 3.940 14.400 C 3.610 14.576 3.397 14.836 3.376 15.117 C 3.354 15.398 3.514 15.673 3.813 15.870 C 4.090 16.052 4.463 16.158 4.868 16.158 C 5.209 16.158 5.539 16.080 5.806 15.940 L 25.404 5.534 C 25.458 5.505 25.500 5.505 25.543 5.505 C 25.586 5.505 25.628 5.513 25.682 5.534 L 45.280 15.898 C 45.547 16.038 45.877 16.116 46.218 16.116 C 46.613 16.116 46.986 16.017 47.273 15.827 C 47.582 15.630 47.742 15.356 47.721 15.075 C 47.689 14.794 47.487 14.534 47.145 14.358 Z" fill="#699602"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+<div id="guid_b0283b06_58c0_480d_b5ce_054415827edb" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: 5.960464477539063e-8px;">
+        <path id="guid_b0283b06_58c0_480d_b5ce_054415827edb-path" d="M 60.143 13.948 L 37.071 0.617 C 34.596 -0.808 30.762 0.384 30.762 2.667 L 30.762 29.330 C 30.762 31.613 34.596 32.812 37.071 31.379 L 60.143 18.048 C 61.982 16.981 61.982 15.015 60.143 13.948 Z M 29.381 13.948 L 6.309 0.617 C 3.833 -0.808 0 0.384 0 2.667 L 0 29.330 C 0 31.613 3.833 32.812 6.309 31.379 L 29.381 18.048 C 31.219 16.981 31.219 15.015 29.381 13.948 Z" fill="#a4ad52"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            </div>
+          </div>
+        </div>
+
+      
+
+
+  <!-- Hero/Fusion Player -->
+  <script>
+    
+      document.addEventListener('DOMContentLoaded', function () {
+        window.player = new fusion.Player({
+          id: 'player',
+          // debug: true, 
+          scenes: [
+            
+            { 
+              id: 'guid_138d60c1_7a34_4403_acfc_0c93e4a3bf18', 
+              type: 'flat', 
+              width: 590, 
+              height: 926,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+            { 
+              id: 'guid_86690d33_0c00_43ef_a9fe_fd561900fff7', 
+              type: 'flat', 
+              width: 590, 
+              height: 926,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+            { 
+              id: 'guid_4b3e641f_0986_42c1_b11f_cfafd4e09b2b', 
+              type: 'flat', 
+              width: 590, 
+              height: 926,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+            { 
+              id: 'guid_61159142_c781_4fe9_b060_63aae654edf1', 
+              type: 'flat', 
+              width: 590, 
+              height: 926,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+            { 
+              id: 'guid_2d0d924f_5cc5_4155_9641_aa912a32546a', 
+              type: 'flat', 
+              width: 590, 
+              height: 926,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+            { 
+              id: 'guid_f4105c36_8e2c_4d7c_821d_de8fdb223ca9', 
+              type: 'flat', 
+              width: 590, 
+              height: 926,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+            { 
+              id: 'guid_9972df8e_40f0_4c3f_a2b4_fa2e0d82911d', 
+              type: 'flat', 
+              width: 590, 
+              height: 926,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+            { 
+              id: 'guid_e3aca77a_c1ff_4e94_be7d_fbe246e6fae4', 
+              type: 'flat', 
+              width: 590, 
+              height: 926,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+            { 
+              id: 'guid_724512c7_f734_496a_8648_88ea145111cc', 
+              type: 'flat', 
+              width: 590, 
+              height: 926,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+            { 
+              id: 'guid_059d02d9_9294_4135_9fb1_efc1b796dd62', 
+              type: 'flat', 
+              width: 590, 
+              height: 926,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+          ]
+        });
+        player.loadScene('guid_138d60c1_7a34_4403_acfc_0c93e4a3bf18');      
+      });
+    
+  </script>
+
+  <!-- Hero Scenes -->
+  <script>
+    
+      //---
+      // Scene: guid_138d60c1_7a34_4403_acfc_0c93e4a3bf18
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_138d60c1_7a34_4403_acfc_0c93e4a3bf18');          
+    
+            //---
+            // guid_039d8bdd_cf4d_4c71_bc44_327e1f1db195 : Interaction (tap)
+            document.getElementById('guid_039d8bdd_cf4d_4c71_bc44_327e1f1db195').addEventListener('click', function() { player.loadScene('guid_86690d33_0c00_43ef_a9fe_fd561900fff7') });
+            
+        }, 1);
+      }); // Scene end    
+    
+      //---
+      // Scene: guid_86690d33_0c00_43ef_a9fe_fd561900fff7
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_86690d33_0c00_43ef_a9fe_fd561900fff7');          
+    
+            //---
+            // guid_a637aa9d_e4ef_493c_a334_a52b947180d6 : Interaction (tap)
+            document.getElementById('guid_a637aa9d_e4ef_493c_a334_a52b947180d6').addEventListener('click', function() { player.loadScene('guid_4b3e641f_0986_42c1_b11f_cfafd4e09b2b') });
+            
+            //---
+            // guid_972d55be_2446_4823_9663_6bf9c72a6313 : Interaction (tap)
+            document.getElementById('guid_972d55be_2446_4823_9663_6bf9c72a6313').addEventListener('click', function() { player.loadScene('guid_61159142_c781_4fe9_b060_63aae654edf1') });
+            
+            //---
+            // guid_bd0ad346_bc53_4d69_b266_9b4fb7d7f6fc : Interaction (tap)
+            document.getElementById('guid_bd0ad346_bc53_4d69_b266_9b4fb7d7f6fc').addEventListener('click', function() { player.loadScene('guid_2d0d924f_5cc5_4155_9641_aa912a32546a') });
+            
+            //---
+            // guid_33895112_edbe_4249_b00c_f50dec04e645 : Interaction (tap)
+            document.getElementById('guid_33895112_edbe_4249_b00c_f50dec04e645').addEventListener('click', function() { player.loadScene('guid_9972df8e_40f0_4c3f_a2b4_fa2e0d82911d') });
+            
+            //---
+            // guid_c7a14d2f_0879_4ff2_b2af_0ecbd3a388b0 : Interaction (tap)
+            document.getElementById('guid_c7a14d2f_0879_4ff2_b2af_0ecbd3a388b0').addEventListener('click', function() { player.loadScene('guid_f4105c36_8e2c_4d7c_821d_de8fdb223ca9') });
+            
+            //---
+            // guid_9dd751a5_cbc8_4d0d_9866_0b429f0c6927 : Interaction (tap)
+            document.getElementById('guid_9dd751a5_cbc8_4d0d_9866_0b429f0c6927').addEventListener('click', function() { player.loadScene('guid_059d02d9_9294_4135_9fb1_efc1b796dd62') });
+            
+            //---
+            // guid_ac3f52f1_1e41_4f83_aea8_52c5b566a157 : Interaction (tap)
+            document.getElementById('guid_ac3f52f1_1e41_4f83_aea8_52c5b566a157').addEventListener('click', function() { player.loadScene('guid_e3aca77a_c1ff_4e94_be7d_fbe246e6fae4') });
+            
+            //---
+            // guid_70310ba6_aec1_46e6_a6a7_f666af7a307b : Interaction (tap)
+            document.getElementById('guid_70310ba6_aec1_46e6_a6a7_f666af7a307b').addEventListener('click', function() { player.loadScene('guid_724512c7_f734_496a_8648_88ea145111cc') });
+            
+        }, 1);
+      }); // Scene end    
+    
+      //---
+      // Scene: guid_4b3e641f_0986_42c1_b11f_cfafd4e09b2b
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_4b3e641f_0986_42c1_b11f_cfafd4e09b2b');          
+    
+            //---
+            // guid_db244192_9018_404f_b146_1274d5cc6e2e : Interaction (tap)
+            document.getElementById('guid_db244192_9018_404f_b146_1274d5cc6e2e').addEventListener('click', function() { player.loadScene('guid_86690d33_0c00_43ef_a9fe_fd561900fff7') });
+            
+            //---
+            // guid_6113123c_d3be_49b2_af58_9e750c73698f : Interaction (tap)
+            document.getElementById('guid_6113123c_d3be_49b2_af58_9e750c73698f').addEventListener('click', function() { player.loadScene('guid_61159142_c781_4fe9_b060_63aae654edf1') });
+            
+        }, 1);
+      }); // Scene end    
+    
+      //---
+      // Scene: guid_61159142_c781_4fe9_b060_63aae654edf1
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_61159142_c781_4fe9_b060_63aae654edf1');          
+    
+            //---
+            // guid_d30f5727_72b5_41cf_a2cf_d75f1b811370 : Interaction (tap)
+            document.getElementById('guid_d30f5727_72b5_41cf_a2cf_d75f1b811370').addEventListener('click', function() { player.loadScene('guid_86690d33_0c00_43ef_a9fe_fd561900fff7') });
+            
+            //---
+            // guid_bd0ca924_4f6d_431a_9283_81620b850b0b : Interaction (tap)
+            document.getElementById('guid_bd0ca924_4f6d_431a_9283_81620b850b0b').addEventListener('click', function() { player.loadScene('guid_2d0d924f_5cc5_4155_9641_aa912a32546a') });
+            
+            //---
+            // guid_d0ef7621_6a2b_4b21_aec5_8b681ffa5e04 : Interaction (tap)
+            document.getElementById('guid_d0ef7621_6a2b_4b21_aec5_8b681ffa5e04').addEventListener('click', function() { player.loadScene('guid_4b3e641f_0986_42c1_b11f_cfafd4e09b2b') });
+            
+        }, 1);
+      }); // Scene end    
+    
+      //---
+      // Scene: guid_2d0d924f_5cc5_4155_9641_aa912a32546a
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_2d0d924f_5cc5_4155_9641_aa912a32546a');          
+    
+            //---
+            // guid_bf696c82_a6c4_40ec_8e1d_c0f22bc41f72 : Interaction (tap)
+            document.getElementById('guid_bf696c82_a6c4_40ec_8e1d_c0f22bc41f72').addEventListener('click', function() { player.loadScene('guid_86690d33_0c00_43ef_a9fe_fd561900fff7') });
+            
+            //---
+            // guid_48294d1c_86a4_451a_80ac_3fa1a2fb1be6 : Interaction (tap)
+            document.getElementById('guid_48294d1c_86a4_451a_80ac_3fa1a2fb1be6').addEventListener('click', function() { player.loadScene('guid_f4105c36_8e2c_4d7c_821d_de8fdb223ca9') });
+            
+            //---
+            // guid_cda242b0_ad19_4b92_9ed4_1dc1d8975f95 : Interaction (tap)
+            document.getElementById('guid_cda242b0_ad19_4b92_9ed4_1dc1d8975f95').addEventListener('click', function() { player.loadScene('guid_61159142_c781_4fe9_b060_63aae654edf1') });
+            
+        }, 1);
+      }); // Scene end    
+    
+      //---
+      // Scene: guid_f4105c36_8e2c_4d7c_821d_de8fdb223ca9
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_f4105c36_8e2c_4d7c_821d_de8fdb223ca9');          
+    
+            //---
+            // guid_297fd889_c793_4670_ab45_0efa4143dd3c : Interaction (tap)
+            document.getElementById('guid_297fd889_c793_4670_ab45_0efa4143dd3c').addEventListener('click', function() { player.loadScene('guid_86690d33_0c00_43ef_a9fe_fd561900fff7') });
+            
+            //---
+            // guid_17a83516_88cd_4f74_a9fe_76d177a288af : Interaction (tap)
+            document.getElementById('guid_17a83516_88cd_4f74_a9fe_76d177a288af').addEventListener('click', function() { player.loadScene('guid_9972df8e_40f0_4c3f_a2b4_fa2e0d82911d') });
+            
+            //---
+            // guid_615685f7_5861_4e0e_8244_38ae684ef4a1 : Interaction (tap)
+            document.getElementById('guid_615685f7_5861_4e0e_8244_38ae684ef4a1').addEventListener('click', function() { player.loadScene('guid_2d0d924f_5cc5_4155_9641_aa912a32546a') });
+            
+        }, 1);
+      }); // Scene end    
+    
+      //---
+      // Scene: guid_9972df8e_40f0_4c3f_a2b4_fa2e0d82911d
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_9972df8e_40f0_4c3f_a2b4_fa2e0d82911d');          
+    
+            //---
+            // guid_7afdae0f_c3ee_4d45_abf7_68f62fdf5962 : Interaction (tap)
+            document.getElementById('guid_7afdae0f_c3ee_4d45_abf7_68f62fdf5962').addEventListener('click', function() { player.loadScene('guid_86690d33_0c00_43ef_a9fe_fd561900fff7') });
+            
+            //---
+            // guid_16c2fab9_cf29_4edf_9cae_9e5389ecc109 : Interaction (tap)
+            document.getElementById('guid_16c2fab9_cf29_4edf_9cae_9e5389ecc109').addEventListener('click', function() { player.loadScene('guid_e3aca77a_c1ff_4e94_be7d_fbe246e6fae4') });
+            
+            //---
+            // guid_779647b6_c31d_4a52_b1b9_9b69694ff526 : Interaction (tap)
+            document.getElementById('guid_779647b6_c31d_4a52_b1b9_9b69694ff526').addEventListener('click', function() { player.loadScene('guid_f4105c36_8e2c_4d7c_821d_de8fdb223ca9') });
+            
+        }, 1);
+      }); // Scene end    
+    
+      //---
+      // Scene: guid_e3aca77a_c1ff_4e94_be7d_fbe246e6fae4
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_e3aca77a_c1ff_4e94_be7d_fbe246e6fae4');          
+    
+            //---
+            // guid_e9af85fc_476d_444f_b03a_8402ea1437c4 : Interaction (tap)
+            document.getElementById('guid_e9af85fc_476d_444f_b03a_8402ea1437c4').addEventListener('click', function() { player.loadScene('guid_86690d33_0c00_43ef_a9fe_fd561900fff7') });
+            
+            //---
+            // guid_0ecc5f30_df5b_4d03_82ff_c6f4bfa3855e : Interaction (tap)
+            document.getElementById('guid_0ecc5f30_df5b_4d03_82ff_c6f4bfa3855e').addEventListener('click', function() { player.loadScene('guid_724512c7_f734_496a_8648_88ea145111cc') });
+            
+            //---
+            // guid_a2aba69e_41da_4cfe_b7c7_f6397f26d58b : Interaction (tap)
+            document.getElementById('guid_a2aba69e_41da_4cfe_b7c7_f6397f26d58b').addEventListener('click', function() { player.loadScene('guid_9972df8e_40f0_4c3f_a2b4_fa2e0d82911d') });
+            
+        }, 1);
+      }); // Scene end    
+    
+      //---
+      // Scene: guid_724512c7_f734_496a_8648_88ea145111cc
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_724512c7_f734_496a_8648_88ea145111cc');          
+    
+            //---
+            // guid_b2c5291c_cf3b_4488_94b2_d0779128322b : Interaction (tap)
+            document.getElementById('guid_b2c5291c_cf3b_4488_94b2_d0779128322b').addEventListener('click', function() { player.loadScene('guid_86690d33_0c00_43ef_a9fe_fd561900fff7') });
+            
+            //---
+            // guid_ee98e719_061e_49e3_be04_a74537b6cdfc : Interaction (tap)
+            document.getElementById('guid_ee98e719_061e_49e3_be04_a74537b6cdfc').addEventListener('click', function() { player.loadScene('guid_059d02d9_9294_4135_9fb1_efc1b796dd62') });
+            
+            //---
+            // guid_8296b0f2_8f45_4c77_94ff_9437e3f2d77a : Interaction (tap)
+            document.getElementById('guid_8296b0f2_8f45_4c77_94ff_9437e3f2d77a').addEventListener('click', function() { player.loadScene('guid_e3aca77a_c1ff_4e94_be7d_fbe246e6fae4') });
+            
+        }, 1);
+      }); // Scene end    
+    
+      //---
+      // Scene: guid_059d02d9_9294_4135_9fb1_efc1b796dd62
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_059d02d9_9294_4135_9fb1_efc1b796dd62');          
+    
+            //---
+            // guid_f53f72cd_ad75_4386_a11c_4a67c4bc0898 : Interaction (tap)
+            document.getElementById('guid_f53f72cd_ad75_4386_a11c_4a67c4bc0898').addEventListener('click', function() { player.loadScene('guid_86690d33_0c00_43ef_a9fe_fd561900fff7') });
+            
+            //---
+            // guid_b0283b06_58c0_480d_b5ce_054415827edb : Interaction (tap)
+            document.getElementById('guid_b0283b06_58c0_480d_b5ce_054415827edb').addEventListener('click', function() { player.loadScene('guid_724512c7_f734_496a_8648_88ea145111cc') });
+            
+        }, 1);
+      }); // Scene end    
+    
+  </script>
+
+  <!-- Hero Timelines -->
+  <script>
+    
+    //---
+    // Scene: guid_138d60c1_7a34_4403_acfc_0c93e4a3bf18
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_138d60c1_7a34_4403_acfc_0c93e4a3bf18');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+    //---
+    // Scene: guid_86690d33_0c00_43ef_a9fe_fd561900fff7
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_86690d33_0c00_43ef_a9fe_fd561900fff7');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+    //---
+    // Scene: guid_4b3e641f_0986_42c1_b11f_cfafd4e09b2b
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_4b3e641f_0986_42c1_b11f_cfafd4e09b2b');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+    //---
+    // Scene: guid_61159142_c781_4fe9_b060_63aae654edf1
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_61159142_c781_4fe9_b060_63aae654edf1');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+    //---
+    // Scene: guid_2d0d924f_5cc5_4155_9641_aa912a32546a
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_2d0d924f_5cc5_4155_9641_aa912a32546a');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+    //---
+    // Scene: guid_f4105c36_8e2c_4d7c_821d_de8fdb223ca9
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_f4105c36_8e2c_4d7c_821d_de8fdb223ca9');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+    //---
+    // Scene: guid_9972df8e_40f0_4c3f_a2b4_fa2e0d82911d
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_9972df8e_40f0_4c3f_a2b4_fa2e0d82911d');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+    //---
+    // Scene: guid_e3aca77a_c1ff_4e94_be7d_fbe246e6fae4
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_e3aca77a_c1ff_4e94_be7d_fbe246e6fae4');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+    //---
+    // Scene: guid_724512c7_f734_496a_8648_88ea145111cc
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_724512c7_f734_496a_8648_88ea145111cc');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+    //---
+    // Scene: guid_059d02d9_9294_4135_9fb1_efc1b796dd62
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_059d02d9_9294_4135_9fb1_efc1b796dd62');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+  </script>
+
+  
+  
+</body>
+</html>
